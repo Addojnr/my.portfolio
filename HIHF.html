@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Heard it here first!</title>
+<link rel="stylesheet" href="./sethstyle.css"/>
+<script src="./sethscript.js"></script>
+</head>
+<body style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home" style="background-color: aqua;padding-bottom: 1cm; margin-left:auto; margin-right:auto;
+      margin-top: 1px;
+      margin-bottom: 1px;
+      padding-top: 2cm;
+      padding-bottom: 1cm;
+      height: 4mm;">
+
+        <div class="pagename" style="float: left; padding-left: 1cm;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-style: italic;font-weight: bolder;font-size: 40px; color: crimson; margin-top: -1cm; margin-bottom: -1cm;">
+          Heard it here first!
+        </div>
+
+      <div class="topdiv" style="float: right;
+      padding-right: 1cm">
+
+        <a class="topmenu" href="#about" style="color: black; margin: 10px; padding: 10px; font-size: 15px;
+        text-decoration:none;font-weight: bolder">About</a>
+        <a class="topmenu" href="#submissions" style="color: black;margin: 10px;padding: 10px;font-size: 15px;
+        text-decoration:none; font-weight: bolder">Submissions</a>
+      </div>
+      </div>
+    </nav>
+
+    <!-- About -->
+    <section id="about" class="container" style="align-items: center; background-color: bisque;">
+          
+        <div>
+            <h1 style="text-align: center; font-size: 30px; font-weight: bolder">
+              Hello! Welcome to Heard it here first!
+            </h1>
+            <p style="text-align: center; font-size: 20px; color: blueviolet">
+            This is a website that allows you to document your favourite songs, their genres and where you were when you heard them the first time.<br>
+            Everyone has memories attached to their favorite songs. <br>
+            Where were you and what were you doing when you heard your favorite song?<br>
+            Share and also see if yours match with others!<br>
+            </p>
+        </div>
+
+        <div style="align-items: center; justify-content: center; margin-left: 300px; margin-right: 300px">
+          <img src="https://tinyurl.com/5c65x97n" class="about_image" width="600px"/>
+        </div>
+      </section>
+
+    <!-- Submissions -->
+    <section id="submissions">
+      <h2 style="text-align: center; font-size: 30px; font-weight: bolder">Submissions</h2>
+      <div style="clear:both;"></div>
+      <div class="all_submissions" id="all_submissions" style="color: blue;" >
+        <div class="submission">
+            <span>&#8220;</span>
+           Jump on the train now! Leave a submission by filling the form below.<br>
+           You can tell us about the year, genre and where you were when you heard your favs.
+           <span>&#8221;</span>
+        </div>
+        <div class="submission">
+            <span>&#8220;</span>
+           When I first heard Over by R2bees, it was such an amazing feeling.
+           I was a uni student then in 2016, and I really enjoyed it with my friends.
+           <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Submission Form -->
+    <section id="new_submissions" style="background-color: azure;">
+      <div class="flex_center" style="display: flex; align-items: center; justify-content: center">
+      <fieldset>
+        <legend class="introduction">Leave a Submission</legend>          
+        <input type="text" placeholder="Name (Optional)"> <br/> 
+          <!--<label for="Nname">Nickname:</label>
+          <input type="text" id="Nname" name="Nname"><br>
+
+          <label for="Songtitle">Song title:</label>
+          <input type="text" id="Songtitle" name="Songtitle"><br>
+
+          <label for="Artistename">Artiste name:</label>
+          <input type="text" id="Artistename" name="Artistename"><br>
+
+          <label for="Year">Year of release:</label>
+          <input type="number" id="year" name="Year"><br>
+          
+          <label for="genre">Genre:</label>
+          <label for="Afrobeats">Afrobeats</label>
+          <input type="radio" id="afrobeats" name="genre">
+          <label for="Hip-Hop">Hip-Hop</label>
+          <input type="radio" id="Hip-Hop" name="genre">
+          <label for="RnB">RnB</label>
+          <input type="radio" id="RnB" name="genre">
+          <label for="Rock">Rock</label>
+          <input type="radio" id="Rock" name="genre">
+          <label for="Jazz">Jazz</label>
+          <input type="radio" id="Jazz" name="genre">
+          <label for="Soul">Soul</label>
+          <input type="radio" id="Soul" name="genre">
+          <label for="Opera">Opera</label>
+          <input type="radio" id="Opera" name="genre"><br>
+
+          <label for="mypic">Select a picture:</label>
+          <input type="file" id="mypic" name="mypic"><br>-->
+
+          <textarea id="new_submission" cols="100" rows="10" placeholder="Message">Tell us where you were and how you felt</textarea>
+          <button id="submit_btn" onclick="addSubmission()">Submit</button>
+      </fieldset>
+    </div>
+  </section>
+
+  <div class="iconbutton" style="width: 48px; height: 48px; border-radius: 100%; background-color: #7600bc;
+  display: flex; align-items: center; justify-content: center; position: fixed; right: 3%; bottom: 3%; cursor: pointer;">
+    <a href="#home">
+      <!--Add the code here for the logo to appear and the icon to be actionable-->
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+    </a>
+  </div>
+
+  <div style="align-items: center; justify-content: center;" class="popup" id="popup" class="flex_center">
+    <!--<img src="html_finalprojimages/checkmark--outline.svg"/>-->
+    <h3> Thank you for your submission.</h3>
+    <button onclick="showPopup(false)">Ok</button>
+  </div>
+
+  </body>
+
+</html>
